@@ -1,0 +1,29 @@
+[versions]
+kotlin = "1.6.21"
+#coroutines = "1.6.1"
+#kaHelpers = "3.4.0"
+gradlePlugins-agp = "7.2.0"
+core-ktx = "1.9.0"
+appcompat = "1.5.1"
+material = "1.6.1"
+junit = "5.9.0"
+espresso-core = "3.4.0"
+
+[libraries]
+#coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "coroutines" }
+#coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "coroutines" }
+#kahelpers-toaster = { module = "com.github.FunkyMuse.KAHelpers:toaster", version.ref = "kaHelpers" }
+core-ktx = { module = "androidx.core:core-ktx", version.ref = "core-ktx" }
+appcompat = { module = "androidx.appcompat:appcompat", version.ref = "appcompat" }
+material = { module = "com.google.android.material:material", version.ref = "material" }
+junit = { module = "org.junit.jupiter:junit-jupiter-api", version.ref = "junit" }
+enginejunit = { module = "org.junit.jupiter:junit-jupiter-engine", version.ref = "junit"}
+espresso-core = { module = "androidx.test.espresso:espresso-core", version.ref = "espresso-core" }
+
+[bundles]
+#coroutines = ["coroutines-android", "coroutines-core"]
+
+[plugins]
+android = { id = "com.android.application", version.ref = "gradlePlugins-agp" }
+kotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+#kapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "kotlin" }

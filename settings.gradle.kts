@@ -14,10 +14,11 @@ dependencyResolutionManagement {
 }
 
 enableFeaturePreview("VERSION_CATALOGS")
+enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 
 rootProject.name = "Pokedex"
 include(":app")
 include(":domain")
-include(":data")
 include(":remote")
 include(":local")
+include(":data")

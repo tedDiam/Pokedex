@@ -3,7 +3,6 @@
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel target="1.7">
       <module name="Pokedex.app" target="11" />
-      <module name="Pokedex.data" target="11" />
       <module name="Pokedex.local" target="11" />
       <module name="Pokedex.mylibrary" target="11" />
       <module name="Pokedex.remote" target="11" />
