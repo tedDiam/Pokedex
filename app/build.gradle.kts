@@ -1,15 +1,16 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
+    id ("kotlin-kapt")
 }
 
 android {
-    compileSdk = 32
+    compileSdk = 33
 
     defaultConfig {
         applicationId = "com.sergediame.pokedex"
         minSdk =  21
-        targetSdk = 32
+        targetSdk = 33
         versionCode = 1
         versionName = "1.0"
 
@@ -34,21 +35,28 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+    namespace = "com.sergediame.pokedex"
 }
 
 dependencies {
 
-    implementation("androidx.core:core-ktx:1.9.0")
-    implementation("androidx.appcompat:appcompat:1.5.1")
-    implementation("com.google.android.material:material:1.6.1")
+    implementation(libs.core.ktx)
+    implementation(libs.appcompat)
+    implementation(libs.material)
 
-    testImplementation("org.junit.jupiter:junit-jupiter-api:5.9.0")
-    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.9.0")
+    testImplementation(libs.junit)
+    testRuntimeOnly(libs.enginejunit)
 
-    androidTestImplementation("androidx.test.espresso:espresso-core:3.4.0")
+    androidTestImplementation(libs.espresso.core)
 
-    implementation(project(":domain"))
-    implementation(project(":data"))
-    implementation(project(":remote"))
-    implementation(project(":local"))
+    implementation(projects.domain)
+    implementation(projects.data)
+    implementation(projects.remote)
+    implementation(projects.local)
+    implementation (libs.dagger)
+    kapt(libs.daggercompiler)
+}
+
+kapt {
+    correctErrorTypes = true
 }
