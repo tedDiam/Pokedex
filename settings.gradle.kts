@@ -12,9 +12,12 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
+
+enableFeaturePreview("VERSION_CATALOGS")
+
 rootProject.name = "Pokedex"
-include ':app'
-include ':domain'
-include ':data'
-include ':remote'
-include ':local'
+include(":app")
+include(":domain")
+include(":data")
+include(":remote")
+include(":local")
