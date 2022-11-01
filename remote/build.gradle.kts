@@ -51,7 +51,7 @@ dependencies {
     implementation(projects.data)
 
     implementation (libs.dagger)
-    implementation(libs.bundles.networking.core)
+    implementation(libs.bundles.networking)
     kapt(libs.dagger.compiler)
 }
 
