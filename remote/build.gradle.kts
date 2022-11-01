@@ -1,7 +1,8 @@
 plugins {
     id("com.android.library")
     id("org.jetbrains.kotlin.android")
-    id ("kotlin-kapt")
+    id("kotlin-kapt")
+    id("kotlinx-serialization")
 }
 
 android {
@@ -52,6 +53,7 @@ dependencies {
 
     implementation (libs.dagger)
     implementation(libs.bundles.networking)
+    implementation(libs.kotlinx.serialization.json)
     kapt(libs.dagger.compiler)
 }
 
