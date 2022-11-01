@@ -14,8 +14,7 @@ android {
         targetSdk = 33
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles("proguard-rules.pro")
-        buildConfigField("String", "API_BASE_URL", "\"\"")
-        buildConfigField("String", "API_KEY", "\"\"")
+        buildConfigField("String", "API_BASE_URL", "\"https://pokeapi.co/api/v2/\"")
     }
 
     buildTypes {
