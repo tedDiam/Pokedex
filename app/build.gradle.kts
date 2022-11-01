@@ -54,7 +54,7 @@ dependencies {
     implementation(projects.remote)
     implementation(projects.local)
     implementation (libs.dagger)
-    kapt(libs.daggercompiler)
+    kapt(libs.dagger.compiler)
 }
 
 kapt {

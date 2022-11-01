@@ -48,7 +48,7 @@ dependencies {
     implementation(projects.data)
 
     implementation (libs.dagger)
-    kapt(libs.daggercompiler)
+    kapt(libs.dagger.compiler)
 
 }
 
